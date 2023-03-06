@@ -3,7 +3,7 @@
 int main() {
     char lower[] {"abc?e"};
     char upper[] {"ABC?E"};
-    char* ptr_upper = upper;  //Equivalent: &upper
+    char* ptr_upper {upper};  //Equivalent: &upper[0]
 
     lower[3] = 'd';      // lower now contains a b c d e \0
     ptr_upper[3] = 'D';  // upper now contains A B C D E \0

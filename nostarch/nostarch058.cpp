@@ -4,15 +4,15 @@ struct ClockOfTheLongNow {
     ClockOfTheLongNow() {year = 2023;}  // constructor
     void add_year() {
         year ++;
-        printf("struc increment year to %d\n", year);
+        printf("struct increment year to %d\n", year);
     }
     bool set_year(int new_year) {
         if (new_year < 2019) {
-            printf("struc it is not possible to set a year < 2019.\n");
+            printf("struct it is not possible to set a year < 2019.\n");
             return false;
         }
         year = new_year;
-        printf("struc set year to: %d\n", year);
+        printf("struct set year to: %d\n", year);
         return true;
     }
     int get_year() {
